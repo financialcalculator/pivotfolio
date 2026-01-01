@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -21,7 +21,7 @@
         <div class="nav__item nav__services">
           <button class="nav__services-toggle" type="button" aria-expanded="false">
             Services
-            <span class="nav__caret">▾</span>
+            <span class="nav__caret">?</span>
           </button>
           <div class="nav__dropdown" role="menu">
             <a href="#retirement-planner" role="menuitem">Retirement Planner</a>
@@ -31,7 +31,7 @@
           </div>
         </div>
         <a href="#contact-us">Contact Us</a>
-        <a href="#signup" class="nav__cta">Sign up</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScAX_LHxprzrCOyJI6m2bQc82LCIvapK7dFGrUhBrHBZkXlGA/viewform?usp=sharing&amp;ouid=115175425004304775162" target="_blank" rel="noopener noreferrer">Speak to me</a>
       </nav>
     </div>
   </header>
@@ -96,18 +96,18 @@
             </label>
             <label>Expected Inflation (%)
               <input type="number" id="inflation" min="0" step="0.1"  />
-              <small class="field-hint">India's annual inflation rate is between 4% to 5%.</small>
+              <small class="field-hint"><em>India's annual inflation rate is between 4% to 5%.</em></small>
             </label>
             <label>Life Expectancy (years)
               <input type="number" id="lifeExpectancy" min="0" step="1" />
             </label>
             <label>Rate of Return on Corpus (%)
               <input type="number" id="rorCorpus" min="0" step="0.1"  />
-              <small class="field-hint">This is the return you expect on your retirement money after you retire, while you’re using that corpus.</small>
+              <small class="field-hint"><em>This is the return you expect on your retirement money after you retire, while you're using that corpus.</em></small>
             </label>
             <label>Expected Return where savings will be invested (%)
               <input type="number" id="savingsReturn" min="0" step="0.1"  />
-              <small class="field-hint">This is the return you expect on your investments before you retire, while you’re still saving and growing your money.</small>
+              <small class="field-hint"><em>This is the return you expect on your investments before you retire, while you're still saving and growing your money.</em></small>
             </label>
             <button class="button calc__button" id="calcButton" type="button">Calculate</button>
           </div>
@@ -193,8 +193,8 @@
         <div class="goals__notes">
           <p class="text">We inflate the goal amount to the future date, discount it back to today, and size a monthly investment using your expected return.</p>
           <p class="text">Monthly investment is the amount to invest at the end of each month to reach the target future value.</p>
-          <p class="text small">Goal Inflation (%) reflects rising costs for that goal, while Return While Investing (%) is what you expect to earn on your investments.</p>
-          <p class="text small">Note: Inflation per goal can change based on market conditions and your preference.</p>
+          <p class="text small"><em>Goal Inflation (%) reflects rising costs for that goal, while Return While Investing (%) is what you expect to earn on your investments.</em></p>
+          <p class="text small"><em>Note: Inflation per goal can change based on market conditions and your preference.</em></p>
         </div>
       </div>
     </section>
@@ -223,7 +223,7 @@
             </label>
             <label>Expected Inflation (%)
               <input type="number" id="insInflation" min="0" max="30" step="0.1" />
-              <small class="field-hint">India’s annual inflation rate typically ranges between 4% to 5%.</small>
+              <small class="field-hint">India's annual inflation rate typically ranges between 4% to 5%.</small>
             </label>
             <label>Existing Insurance Cover (Rs.)
               <input type="number" id="insExisting" min="0" step="50000" />
@@ -247,7 +247,7 @@
               <div class="ins-label">Additional Cover Needed</div>
               <div class="ins-value" id="insAdditional">Rs.0</div>
             </div>
-            <p class="ins-disclaimer">Educational purposes only. Not financial advice.</p>
+            <p class="ins-disclaimer"><em>Educational purposes only. Not financial advice.</em></p>
           </div>
         </div>
       </div>
@@ -334,8 +334,8 @@
             <div class="pfs-card">
               <div class="pfs-card__title">Annual Obligations / Misc</div>
               <div class="pfs-fields two-col">
-                <label>Annual / Misc Item 1<input class="pf-input" id="pfAnnual1" type="number" min="0" step="500"></label>
-                <label>Annual / Misc Item 2<input class="pf-input" id="pfAnnual2" type="number" min="0" step="500"></label>
+                <label>School Fees<input class="pf-input" id="pfAnnual1" type="number" min="0" step="500"></label>
+                <label>Others<input class="pf-input" id="pfAnnual2" type="number" min="0" step="500"></label>
               </div>
             </div>
 
@@ -355,7 +355,7 @@
             <div class="pfs-card">
               <div class="pfs-total"><span class="big">Total Expenses</span><strong id="pfTotalExpenses" class="big">Rs.0</strong></div>
               <div class="pfs-total highlight"><span class="big">Annual Surplus</span><strong id="pfSurplus" class="big">Rs.0</strong></div>
-              <p class="field-hint">Surplus transferred to Balance Sheet.</p>
+              <p class="field-hint"><em>Surplus transferred to Balance Sheet.</em></p>
             </div>
           </div>
 
@@ -366,7 +366,7 @@
                 <label>Savings Bank Account<input class="pf-input" id="pfSavAcc" type="number" min="0" step="500"></label>
                 <label>Fixed Deposits (FDs)<input class="pf-input" id="pfFD" type="number" min="0" step="500"></label>
                 <label>Public Provident Fund (PPF)<input class="pf-input" id="pfAssetPPF" type="number" min="0" step="500"></label>
-                <label>Employees’ Provident Fund (EPF)<input class="pf-input" id="pfEPF" type="number" min="0" step="500"></label>
+                <label>Employees' Provident Fund (EPF)<input class="pf-input" id="pfEPF" type="number" min="0" step="500"></label>
                 <label>National Pension Scheme (NPS)<input class="pf-input" id="pfAssetNPS" type="number" min="0" step="500"></label>
                 <label>Mutual Funds<input class="pf-input" id="pfMF" type="number" min="0" step="500"></label>
                 <label>Annual Surplus (auto-filled)<input class="pf-input" id="pfSurplusAsset" type="number" readonly></label>
@@ -403,7 +403,7 @@
             </div>
 
             <div class="pfs-card highlight summary">
-              <div class="pfs-total"><span class="big">Net Worth (Assets − Liabilities)</span><strong id="pfNetWorth" class="big">Rs.0</strong></div>
+              <div class="pfs-total"><span class="big">Net Worth (Assets - Liabilities)</span><strong id="pfNetWorth" class="big">Rs.0</strong></div>
             </div>
           </div>
         </div>
@@ -744,5 +744,6 @@
     }
   })();
 </script>
+
 </body>
 </html>

@@ -209,6 +209,7 @@ p { margin: 0; color: var(--subtext); }
 #goal-planner,
 #insurance-planner,
 #personal-financial-statement,
+#doubts,
 .section {
   scroll-margin-top: 140px;
 }
@@ -736,6 +737,29 @@ h3 { font-size: 20px; }
   line-height: 1.6;
 }
 
+.doubts {
+  padding-top: calc(var(--space) * 1.4);
+  padding-bottom: calc(var(--space) * 1.6);
+  background: #f7f8fa;
+}
+.doubts__inner {
+  display: grid;
+  gap: var(--space);
+}
+.doubts__frame {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 32px rgba(15, 23, 42, 0.05);
+  overflow: hidden;
+}
+.doubts__frame iframe {
+  width: 100%;
+  height: 1200px;
+  border: none;
+  display: block;
+}
+
 @media (max-width: 900px) {
   :root { --max-width: 1180px; --max-width-wide: 1280px; }
   .hero__image { height: 440px; object-position: center 18%; }
@@ -750,6 +774,7 @@ h3 { font-size: 20px; }
   .signup__box { grid-template-columns: 1fr; }
   .cta__box { grid-template-columns: 1fr; }
   .footer__inner { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .doubts__frame iframe { height: 1350px; }
 }
 
 @media (max-width: 768px) {
@@ -761,4 +786,5 @@ h3 { font-size: 20px; }
   .topbar__inner { height: 64px; }
   .goals__row { grid-template-columns: 1fr; }
   .goal-actions { grid-column: span 1; }
+  .doubts__frame iframe { height: 1450px; }
 }
